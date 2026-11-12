@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calzado</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tienda">
+  <!-- Barra superior: marca, menú de categorías, carrito y cuenta -->
+  <header class="topbar">
+    <strong class="brand">NIKE</strong>
+    <nav class="menu" aria-label="Categorías">
+      <a href="index.html">Inicio</a>
+      <a href="calzado.html" aria-current="page">Calzado</a>
+      <a href="ropa.html">Ropa</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="ninos.html">Niños</a>
+    </nav>
+    <div class="cuenta">
+      <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+      <details class="cuenta-menu">
+        <summary>Cuenta</summary>
+        <div class="cuenta-panel" id="sesion"></div>
+      </details>
+    </div>
+  </header>
+  <!-- Título de la categoría -->
+  <section class="titulo-cat">
+    <div>
+      <h1>Calzado</h1>
+      <p>Tenis para correr, entrenar, jugar y para el día a día.</p>
+    </div>
+  </section>
+  <!-- Lista de productos -->
+  <main class="contenedor">
+    <ul class="productos">
+        <li>
+          <article class="card">
+            <div class="card-img tono-1"><span aria-hidden="true">Lifestyle</span></div>
+            <h3>Nike Air Force 1 &#x27;07</h3>
+            <p class="desc">El tenis clásico de piel con amortiguación Air.</p>
+            <p class="precio">$2,399.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-1" data-nombre="Nike Air Force 1 &#x27;07" data-linea="Lifestyle" data-precio="2399">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-2"><span aria-hidden="true">Lifestyle</span></div>
+            <h3>Nike Air Max 90</h3>
+            <p class="desc">Diseño icónico con unidad Air visible en el talón.</p>
+            <p class="precio">$3,099.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-2" data-nombre="Nike Air Max 90" data-linea="Lifestyle" data-precio="3099">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-3"><span aria-hidden="true">Running</span></div>
+            <h3>Nike Pegasus 41</h3>
+            <p class="desc">Tenis de running para entrenar a diario con amortiguación reactiva.</p>
+            <p class="precio">$2,899.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-3" data-nombre="Nike Pegasus 41" data-linea="Running" data-precio="2899">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-4"><span aria-hidden="true">Running</span></div>
+            <h3>Nike Vomero 17</h3>
+            <p class="desc">Amortiguación suave para kilómetros largos y cómodos.</p>
+            <p class="precio">$3,499.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-4" data-nombre="Nike Vomero 17" data-linea="Running" data-precio="3499">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-5"><span aria-hidden="true">Lifestyle</span></div>
+            <h3>Nike Dunk Low</h3>
+            <p class="desc">Silueta de básquetbol de los 80 convertida en básico urbano.</p>
+            <p class="precio">$2,699.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-5" data-nombre="Nike Dunk Low" data-linea="Lifestyle" data-precio="2699">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-6"><span aria-hidden="true">Básquetbol</span></div>
+            <h3>Air Jordan 1 Low</h3>
+            <p class="desc">Versión baja del modelo que inició la línea Jordan.</p>
+            <p class="precio">$2,799.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-6" data-nombre="Air Jordan 1 Low" data-linea="Básquetbol" data-precio="2799">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-1"><span aria-hidden="true">Entrenamiento</span></div>
+            <h3>Nike Metcon 9</h3>
+            <p class="desc">Estabilidad y durabilidad para levantar y entrenar.</p>
+            <p class="precio">$3,199.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-7" data-nombre="Nike Metcon 9" data-linea="Entrenamiento" data-precio="3199">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-2"><span aria-hidden="true">Fútbol</span></div>
+            <h3>Nike Mercurial Vapor 15 Academy</h3>
+            <p class="desc">Tacos ligeros para jugar en pasto natural y sintético.</p>
+            <p class="precio">$1,899.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-8" data-nombre="Nike Mercurial Vapor 15 Academy" data-linea="Fútbol" data-precio="1899">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-3"><span aria-hidden="true">Lifestyle</span></div>
+            <h3>Nike Court Vision Low</h3>
+            <p class="desc">Estilo retro de básquetbol con acabado de piel sintética.</p>
+            <p class="precio">$1,599.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-9" data-nombre="Nike Court Vision Low" data-linea="Lifestyle" data-precio="1599">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-4"><span aria-hidden="true">Running</span></div>
+            <h3>Nike Revolution 7</h3>
+            <p class="desc">Tenis ligero y flexible para empezar a correr.</p>
+            <p class="precio">$1,299.00 MXN</p>
+            <button type="button" class="btn-add" data-id="calzado-10" data-nombre="Nike Revolution 7" data-linea="Running" data-precio="1299">Agregar al carrito</button>
+          </article>
+        </li>
+    </ul>
+  </main>
+  <!-- Pie de página con los datos del alumno -->
+  <footer class="pie">
+    <div>
+      <h2>Datos del alumno</h2>
+      <p><strong>Nombre:</strong> Eduardo Valdillez Alamos</p>
+      <p><strong>Grupo:</strong> 5-J</p>
+      <p><strong>Número de control:</strong> 0903</p>
+      <p class="copy">&copy; 2026 Tienda deportiva. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Direcciones de las fotos y lógica de la página -->
+  <script src="js/imagenes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

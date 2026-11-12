@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accesorios</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tienda">
+  <!-- Barra superior: marca, menú de categorías, carrito y cuenta -->
+  <header class="topbar">
+    <strong class="brand">NIKE</strong>
+    <nav class="menu" aria-label="Categorías">
+      <a href="index.html">Inicio</a>
+      <a href="calzado.html">Calzado</a>
+      <a href="ropa.html">Ropa</a>
+      <a href="accesorios.html" aria-current="page">Accesorios</a>
+      <a href="ninos.html">Niños</a>
+    </nav>
+    <div class="cuenta">
+      <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+      <details class="cuenta-menu">
+        <summary>Cuenta</summary>
+        <div class="cuenta-panel" id="sesion"></div>
+      </details>
+    </div>
+  </header>
+  <!-- Título de la categoría -->
+  <section class="titulo-cat">
+    <div>
+      <h1>Accesorios</h1>
+      <p>Mochilas, gorras, balones y todo lo que necesitas para completar tu equipo.</p>
+    </div>
+  </section>
+  <!-- Lista de productos -->
+  <main class="contenedor">
+    <ul class="productos">
+        <li>
+          <article class="card">
+            <div class="card-img tono-1"><span aria-hidden="true">Mochilas</span></div>
+            <h3>Mochila Nike Brasilia 9.5</h3>
+            <p class="desc">Mochila resistente con compartimento principal amplio.</p>
+            <p class="precio">$799.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-1" data-nombre="Mochila Nike Brasilia 9.5" data-linea="Mochilas" data-precio="799">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-2"><span aria-hidden="true">Mochilas</span></div>
+            <h3>Mochila Nike Elemental</h3>
+            <p class="desc">Mochila de uso diario con bolsillo frontal.</p>
+            <p class="precio">$899.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-2" data-nombre="Mochila Nike Elemental" data-linea="Mochilas" data-precio="899">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-3"><span aria-hidden="true">Gorras</span></div>
+            <h3>Gorra Nike Club Swoosh</h3>
+            <p class="desc">Gorra ajustable de algodón con logo bordado.</p>
+            <p class="precio">$449.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-3" data-nombre="Gorra Nike Club Swoosh" data-linea="Gorras" data-precio="449">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-4"><span aria-hidden="true">Calcetas</span></div>
+            <h3>Calcetas Nike Everyday Cushioned (3 pares)</h3>
+            <p class="desc">Calcetas acolchadas para entrenar y correr.</p>
+            <p class="precio">$399.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-4" data-nombre="Calcetas Nike Everyday Cushioned (3 pares)" data-linea="Calcetas" data-precio="399">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-5"><span aria-hidden="true">Balones</span></div>
+            <h3>Balón de Fútbol Nike Pitch</h3>
+            <p class="desc">Balón duradero para jugar en cancha o parque.</p>
+            <p class="precio">$599.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-5" data-nombre="Balón de Fútbol Nike Pitch" data-linea="Balones" data-precio="599">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-6"><span aria-hidden="true">Balones</span></div>
+            <h3>Balón de Básquetbol Nike Everyday Playground</h3>
+            <p class="desc">Balón para cancha exterior con buen agarre.</p>
+            <p class="precio">$699.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-6" data-nombre="Balón de Básquetbol Nike Everyday Playground" data-linea="Balones" data-precio="699">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-1"><span aria-hidden="true">Hidratación</span></div>
+            <h3>Botella Nike Big Mouth</h3>
+            <p class="desc">Botella de boca ancha fácil de llenar y limpiar.</p>
+            <p class="precio">$449.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-7" data-nombre="Botella Nike Big Mouth" data-linea="Hidratación" data-precio="449">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-2"><span aria-hidden="true">Bolsas</span></div>
+            <h3>Riñonera Nike Heritage</h3>
+            <p class="desc">Riñonera compacta para llevar lo esencial.</p>
+            <p class="precio">$599.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-8" data-nombre="Riñonera Nike Heritage" data-linea="Bolsas" data-precio="599">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-3"><span aria-hidden="true">Entrenamiento</span></div>
+            <h3>Muñequeras Nike Swoosh (2 piezas)</h3>
+            <p class="desc">Muñequeras absorbentes para entrenar.</p>
+            <p class="precio">$299.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-9" data-nombre="Muñequeras Nike Swoosh (2 piezas)" data-linea="Entrenamiento" data-precio="299">Agregar al carrito</button>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <div class="card-img tono-4"><span aria-hidden="true">Bolsas</span></div>
+            <h3>Bolsa de Gimnasio Nike Gym Club</h3>
+            <p class="desc">Bolsa de mano espaciosa para ir al gimnasio.</p>
+            <p class="precio">$999.00 MXN</p>
+            <button type="button" class="btn-add" data-id="accesorios-10" data-nombre="Bolsa de Gimnasio Nike Gym Club" data-linea="Bolsas" data-precio="999">Agregar al carrito</button>
+          </article>
+        </li>
+    </ul>
+  </main>
+  <!-- Pie de página con los datos del alumno -->
+  <footer class="pie">
+    <div>
+      <h2>Datos del alumno</h2>
+      <p><strong>Nombre:</strong> Eduardo Valdillez Alamos</p>
+      <p><strong>Grupo:</strong> 5-J</p>
+      <p><strong>Número de control:</strong> 0903</p>
+      <p class="copy">&copy; 2026 Tienda deportiva. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Direcciones de las fotos y lógica de la página -->
+  <script src="js/imagenes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

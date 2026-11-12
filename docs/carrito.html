@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="carrito">
+  <!-- Barra superior: marca, menú de categorías, carrito y cuenta -->
+  <header class="topbar">
+    <strong class="brand">NIKE</strong>
+    <nav class="menu" aria-label="Categorías">
+      <a href="index.html">Inicio</a>
+      <a href="calzado.html">Calzado</a>
+      <a href="ropa.html">Ropa</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="ninos.html">Niños</a>
+    </nav>
+    <div class="cuenta">
+      <a href="carrito.html" aria-current="page">Carrito (<span id="contador">0</span>)</a>
+      <details class="cuenta-menu">
+        <summary>Cuenta</summary>
+        <div class="cuenta-panel" id="sesion"></div>
+      </details>
+    </div>
+  </header>
+  <!-- Título de la página -->
+  <section class="titulo-cat">
+    <div>
+      <h1>Carrito</h1>
+      <p>Revisa tus productos antes de finalizar la compra.</p>
+    </div>
+  </section>
+  <!-- Mensajes y contenido del carrito (se dibuja desde app.js) -->
+  <main class="contenedor">
+    <div id="mensajes"></div>
+    <div id="carrito"></div>
+  </main>
+  <!-- Pie de página con los datos del alumno -->
+  <footer class="pie">
+    <div>
+      <h2>Datos del alumno</h2>
+      <p><strong>Nombre:</strong> Eduardo Valdillez Alamos</p>
+      <p><strong>Grupo:</strong> 5-J</p>
+      <p><strong>Número de control:</strong> 0903</p>
+      <p class="copy">&copy; 2026 Tienda deportiva. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Direcciones de las fotos y lógica de la página -->
+  <script src="js/imagenes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
